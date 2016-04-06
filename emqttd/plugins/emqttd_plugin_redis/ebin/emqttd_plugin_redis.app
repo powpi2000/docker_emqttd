@@ -1,0 +1,11 @@
+{application,emqttd_plugin_redis,
+             [{description,"emqttd Redis Plugin"},
+              {vsn,"0.17.0"},
+              {registered,[]},
+              {applications,[kernel,stdlib,eredis,ecpool]},
+              {mod,{emqttd_plugin_redis_app,[]}},
+              {env,[]},
+              {modules,[emqttd_acl_redis,emqttd_auth_redis,
+                        emqttd_backend_redis,emqttd_plugin_redis,
+                        emqttd_plugin_redis_app,emqttd_plugin_redis_sup,
+                        emqttd_redis_client]}]}.

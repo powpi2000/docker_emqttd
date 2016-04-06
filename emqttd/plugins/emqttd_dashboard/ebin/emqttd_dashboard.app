@@ -1,0 +1,13 @@
+{application,emqttd_dashboard,
+             [{description,"emqttd web dashboard"},
+              {vsn,"0.17.1"},
+              {registered,[]},
+              {applications,[kernel,stdlib,mnesia]},
+              {mod,{emqttd_dashboard_app,[]}},
+              {env,[]},
+              {modules,[emqttd_auth_dashboard,emqttd_dashboard,
+                        emqttd_dashboard_admin,emqttd_dashboard_app,
+                        emqttd_dashboard_client,emqttd_dashboard_overview,
+                        emqttd_dashboard_route,emqttd_dashboard_session,
+                        emqttd_dashboard_subscription,emqttd_dashboard_sup,
+                        emqttd_dashboard_topic,emqttd_dashboard_user]}]}.

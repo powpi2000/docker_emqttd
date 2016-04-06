@@ -1,0 +1,10 @@
+{application,emqttd_plugin_pgsql,
+             [{description,"emqttd PostgreSQL Plugin"},
+              {vsn,"0.17.0"},
+              {registered,[]},
+              {applications,[kernel,stdlib,epgsql,ecpool]},
+              {mod,{emqttd_plugin_pgsql_app,[]}},
+              {env,[]},
+              {modules,[emqttd_acl_pgsql,emqttd_auth_pgsql,
+                        emqttd_pgsql_client,emqttd_plugin_pgsql,
+                        emqttd_plugin_pgsql_app,emqttd_plugin_pgsql_sup]}]}.
