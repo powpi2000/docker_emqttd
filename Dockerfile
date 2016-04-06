@@ -2,6 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER eric.lin <eric.lin@orbweb.com>
 
 RUN apt-get update -y
+RUN apt-get upgrade -y
 RUN mkdir -p /opt
 
 WORKDIR /opt
