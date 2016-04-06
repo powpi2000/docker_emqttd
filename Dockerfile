@@ -7,13 +7,13 @@ RUN mkdir -p /opt
 
 WORKDIR /opt
 
-COPY emqttd /opt/
-WORKDIR /opt/emqttd
-COPY emqttd.sh  /etc/init.d/emqttd
-RUN chmod +x /etc/init.d/emqttd
+COPY emqttd /opt/emqttd
+WORKDIR /
+COPY emqttd.sh  /emqttd.sh
+RUN chmod +x /emqttd.sh
 
 
 
 EXPOSE 1883 8883 8083 18083
 
-CMD ["/etc/init.d/emqttd","start"]
+CMD ["/emqttd.sh"]
