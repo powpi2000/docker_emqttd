@@ -8,7 +8,8 @@ RUN mkdir -p /opt
 WORKDIR /opt
 
 COPY emqttd /opt/
-COPY emqttd.sh /etc/init.d/emqttd
+WORKDIR /opt/emqttd
+COPY emqttd.sh  /etc/init.d/emqttd
 RUN chmod +x /etc/init.d/emqttd
 
 
