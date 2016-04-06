@@ -12,12 +12,12 @@
 
 start() {
     echo "starting emqttd..."
-    ./bin/emqttd start
+    /opt/emqttd/bin/emqttd  start
 }
 
 stop() {
     echo "stopping emqttd..."
-     ./bin/emqttd stop
+     /opt/emqttd/bin/emqttd stop
 }
 
 restart() {
