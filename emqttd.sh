@@ -6,7 +6,7 @@
 # description: emqttd is mqtt broker.
 
 # source function library
-. /etc/rc.d/init.d/functions
+#. /etc/rc.d/init.d/functions
 
 # export HOME=/root
 
